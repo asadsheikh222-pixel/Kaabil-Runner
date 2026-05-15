@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Custom colors from Immersive UI */
+  --color-cyber-black: #050508;
+  --color-cyber-cyan: #00f2ff;
+  --color-cyber-purple: #bc13fe;
+  --color-cyber-pink: #ff00ff;
+  --color-cyber-red: #ff0033;
+}
+
+@layer base {
+  body {
+    @apply bg-cyber-black text-white antialiased overflow-hidden selection:bg-cyber-cyan selection:text-black;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.neon-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.5), 0 0 20px rgba(0, 242, 255, 0.3);
+}
+
+.neon-glow-purple {
+  text-shadow: 0 0 10px rgba(188, 19, 254, 0.5), 0 0 20px rgba(188, 19, 254, 0.3);
+}
+
+.neon-border-cyan {
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.4), inset 0 0 10px rgba(0, 242, 255, 0.2);
+}
+
+.neon-border-purple {
+  box-shadow: 0 0 15px rgba(188, 19, 254, 0.4), inset 0 0 10px rgba(188, 19, 254, 0.2);
+}
+
+.cyber-grid {
+  background-image: 
+    linear-gradient(rgba(188, 19, 254, 0.05) 1px, transparent 1px), 
+    linear-gradient(90deg, rgba(188, 19, 254, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.scanline {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.06),
+    rgba(0, 255, 0, 0.02),
+    rgba(0, 0, 255, 0.06)
+  );
+  background-size: 100% 4px, 3px 100%;
+}

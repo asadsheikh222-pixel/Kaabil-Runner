@@ -1,0 +1,8 @@
+{
+  "name": "KAABIL RUNNER",
+  "description": "A high-octane futuristic endless runner with a neon cyber aesthetic. Dodge obstacles, collect energy orbs, and survive the digital void.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
